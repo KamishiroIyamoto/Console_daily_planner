@@ -65,7 +65,7 @@ int main()
 			getline(cin, other);
 			d.text = other;
 
-			fn.open("Notes.txt", fstream::in | fstream::app | fstream::out);
+			fn.open("Notes.dr", fstream::in | fstream::app | fstream::out);
 			if (fn.is_open())
 			{
 				fn << d << "\n";
@@ -99,7 +99,7 @@ int main()
 		link:
 			system("cls");
 			cout << "\tВаши заметки:\n" << endl;
-			fn.open("Notes.txt", fstream::in | fstream::app | fstream::out);
+			fn.open("Notes.dr", fstream::in | fstream::app | fstream::out);
 			if (fn.is_open())
 			{
 				Day temp;
@@ -132,7 +132,7 @@ int main()
 			if (other == "да" || other == "Да")
 			{
 				ofstream of;
-				of.open("Notes.txt");
+				of.open("Notes.dr");
 				of << "";
 				of.close();
 				system("cls");
